@@ -12,37 +12,43 @@
 
     <title>Fill The Form</title>
     <style>
-    .btnbox {}
+        .btnbox {}
     </style>
     <style>
-    .error {
-        color: red
-    }
+        .error {
+            color: red
+        }
     </style>
 </head>
 
 <body>
-<?php include "insert.php"?>
+    <?php include "insert.php"?>
 
     <h1>Fill The Form</h1>
     <div class="container">
         <form action="/php/project/form.php" method="POST">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Name</label>
-                <span class="error">*<?php echo $nameErr;?></span>
+                <span class="error">*
+                    <?php echo $nameErr;?>
+                </span>
                 <input type="name" class="form-control" name="username" id="username">
 
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <span class="error">*<?php echo $emailErr; ?></span>
+                <span class="error">*
+                    <?php echo $emailErr; ?>
+                </span>
                 <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp">
 
                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Password</label>
-                <span class="error">*<?php echo $passErr; ?></span>
+                <span class="error">*
+                    <?php echo $passErr; ?>
+                </span>
                 <input type="password" class="form-control" name="pass" id="password">
 
             </div>
@@ -91,7 +97,10 @@
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Birth Date</label>
-                <span class="error">* <?php echo $birthdateErr;?></span>
+                <span class="error">*
+                    <?php echo $birthdateErr;?>
+                </span>
+                <input type="date" class="form-control" id="birthdate" name="birthdate">
                 <input type="date" class="form-control" id="birthdate" name="birthdate">
 
             </div>
@@ -100,8 +109,10 @@
 
                 <textarea class="form-control" placeholder="Leave a comment here" name="address"
                     id="floatingTextarea"></textarea>
-                <label for="floatingTextarea">Address<span class="error">* <?php echo $addressErr;?></span></label>
-                
+                <label for="floatingTextarea">Address<span class="error">*
+                        <?php echo $addressErr;?>
+                    </span></label>
+
 
             </div>
 
@@ -114,7 +125,7 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
+        </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
